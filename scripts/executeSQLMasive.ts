@@ -7,7 +7,7 @@ export default async function ejecutarScriptMasivo(): Promise<void> {
     let connection;
 
     try {
-        const rutaArchivo = path.join(__dirname, 'consulta.sql');
+        const rutaArchivo = path.join(__dirname, '..', 'consulta.sql');
         const sqlOriginal = fs.readFileSync(rutaArchivo, 'utf8');
 
         // 1. Conexión inicial al servidor
