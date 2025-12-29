@@ -1,10 +1,11 @@
+import 'dotenv/config';
 import * as mysql from 'mysql2/promise';
 
 const config: mysql.ConnectionOptions = {
-    host: 'localhost',
-    port: 3307,
-    user: 'root',
-    password: 'm68,8}R<H^Hne$%I=KJ',
+    host: process.env.HOST,
+    port: Number(process.env.PORT),
+    user: process.env.USER,
+    password: process.env.PASSWORD,
     multipleStatements: true // Permite ejecutar múltiples consultas en una sola llamada
 };
 

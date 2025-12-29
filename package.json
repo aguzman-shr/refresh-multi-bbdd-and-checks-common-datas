@@ -4,6 +4,7 @@
   "description": "Actualizar y comprobar datos en todas las bases de datos MySQL que nosotros configuremos en el config",
   "main": "index.js",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "mysql2": "^3.16.0"
   },
   "devDependencies": {
